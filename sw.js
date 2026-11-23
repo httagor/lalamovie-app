@@ -1,0 +1,1 @@
+const CACHE="lalamovie-shell-v1";const FILES=["./","./index.html","./styles.css","./app.js","./manifest.webmanifest"];self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES))));self.addEventListener("fetch",e=>{if(e.request.method!=="GET")return;e.respondWith(caches.match(e.request).then(c=>c||fetch(e.request).catch(()=>c)))})

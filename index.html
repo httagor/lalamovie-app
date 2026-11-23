@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#09090d"><meta name="description" content="LalaMovie — Movies and TV shows">
+  <link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css">
+  <title>LalaMovie</title>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">L</span>LALA<span>MOVIE</span></a>
+  <nav><a href="#movies">Movies</a><a href="#series">TV Series</a><a href="#genres">Genres</a></nav>
+  <button id="searchToggle" class="icon-btn" aria-label="Search">⌕</button>
+</header>
+<section class="hero" id="hero">
+  <div class="hero-shade"></div>
+  <div class="hero-content"><p class="eyebrow">WELCOME TO LALAMOVIE</p><h1>Stories worth<br>staying in for.</h1>
+  <p class="hero-copy">Discover movies and series in one place.</p>
+  <a class="primary-btn" href="#movies">Explore now <b>→</b></a></div>
+</section>
+<section class="search-wrap hidden" id="searchWrap"><input id="searchInput" type="search" placeholder="Search movies and series…"><button id="clearSearch">✕</button></section>
+<main>
+  <section class="section" id="movies"><div class="section-head"><div><p class="eyebrow">YOUR NEXT FAVORITE</p><h2>Latest Movies</h2></div><a href="#movies" class="subtle-link">View all</a></div><div class="poster-grid" id="movieGrid"><p class="loading">Loading movies…</p></div></section>
+  <section class="section" id="series"><div class="section-head"><div><p class="eyebrow">BINGE-WORTHY</p><h2>TV Series</h2></div></div><div class="poster-grid" id="seriesGrid"><p class="loading">Loading series…</p></div></section>
+  <section class="section" id="genres"><div class="section-head"><div><p class="eyebrow">FIND YOUR MOOD</p><h2>Browse Genres</h2></div></div><div class="genre-list" id="genreList"><span class="genre-chip">Action</span><span class="genre-chip">Drama</span><span class="genre-chip">Comedy</span><span class="genre-chip">Thriller</span></div></section>
+</main>
+<footer><div class="brand"><span class="brand-mark">L</span>LALA<span>MOVIE</span></div><p>Discover. Watch. Enjoy.</p><small>Only watch content you have the right to access.</small></footer>
+<div class="modal hidden" id="detailModal"><div class="modal-card"><button class="close" id="closeModal">✕</button><div id="modalBody"></div></div></div>
+<script src="app.js"></script>
+</body></html>
